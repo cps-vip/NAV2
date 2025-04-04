@@ -1,0 +1,29 @@
+[0.011s] Invoking command in '/home/ubuntu/NAV2/src/build/NAV2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/NAV2 -- -j16 -l16
+[0.041s] Invoked command in '/home/ubuntu/NAV2/src/build/NAV2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/NAV2 -- -j16 -l16
+[0.050s] Invoking command in '/home/ubuntu/NAV2/src/build/NAV2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/NAV2/src/build/NAV2
+[0.057s] -- Install configuration: ""
+[0.057s] -- Execute custom install script
+[0.057s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/gazebo_control.xacro
+[0.057s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/inertial_macros.xacro
+[0.058s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/robot.urdf.xacro
+[0.058s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/robot_core.xacro
+[0.058s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/ros2_control.xacro
+[0.058s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/launch_sim.launch.py
+[0.058s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/rsp.launch.py
+[0.059s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/worlds/empty.world
+[0.059s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/package_run_dependencies/NAV2
+[0.059s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/parent_prefix_path/NAV2
+[0.059s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/environment/ament_prefix_path.sh
+[0.060s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/environment/ament_prefix_path.dsv
+[0.060s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/environment/path.sh
+[0.060s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/environment/path.dsv
+[0.060s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/local_setup.bash
+[0.060s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/local_setup.sh
+[0.060s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/local_setup.zsh
+[0.060s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/local_setup.dsv
+[0.060s] -- Symlinking: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/package.dsv
+[0.068s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/packages/NAV2
+[0.068s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/cmake/NAV2Config.cmake
+[0.068s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/cmake/NAV2Config-version.cmake
+[0.068s] -- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/package.xml
+[0.070s] Invoked command in '/home/ubuntu/NAV2/src/build/NAV2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/NAV2/src/build/NAV2

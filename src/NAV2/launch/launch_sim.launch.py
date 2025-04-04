@@ -23,9 +23,8 @@ def generate_launch_description():
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
-                )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'true'}.items()
+                )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'false'}.items()
     )
-
 
 
     default_world = os.path.join(
@@ -57,6 +56,24 @@ def generate_launch_description():
                         output='screen')
 
 
+    bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
+    ros_gz_bridge = Node(
+        package="ros_gz_bridge",
+        executable="parameter_bridge",
+        arguments=[
+            '--ros-args',
+            '-p',
+            f'config_file:={bridge_params}',
+        ]
+    )
+
+    ros_gz_image_bridge = Node(
+        package="ros_gz_image",
+        executable="image_bridge",
+        arguments=["/camera/image_raw"]
+    )
+
+
 
     # Code for delaying a node (I haven't tested how effective it is)
     # 
@@ -81,5 +98,7 @@ def generate_launch_description():
         rsp,
         world_arg,
         gazebo,
-        spawn_entity
+        spawn_entity,
+        ros_gz_bridge,
+        ros_gz_image_bridge
     ])

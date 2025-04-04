@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "description" "launch" "worlds" "DESTINATION" "share/NAV2")
-ament_cmake_symlink_install_directory("/home/ubuntu/NAV2/src/NAV2" DIRECTORY "description" "launch" "worlds" "DESTINATION" "share/NAV2")
+# install(DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/NAV2")
+ament_cmake_symlink_install_directory("/home/ubuntu/NAV2/src/NAV2" DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/NAV2")
 
 # install(FILES "/home/ubuntu/NAV2/src/build/NAV2/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/NAV2" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ubuntu/NAV2/src/NAV2" FILES "/home/ubuntu/NAV2/src/build/NAV2/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/NAV2" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

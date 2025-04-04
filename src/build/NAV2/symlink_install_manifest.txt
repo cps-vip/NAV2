@@ -1,6 +1,12 @@
+/home/ubuntu/NAV2/src/install/NAV2/share/NAV2/config/gaz_ros2_ctl_use_sim.yaml
+/home/ubuntu/NAV2/src/install/NAV2/share/NAV2/config/gz_bridge.yaml
+/home/ubuntu/NAV2/src/install/NAV2/share/NAV2/config/my_controllers.yaml
+/home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/face.xacro
+/home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/gazebo_control.xacro
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/inertial_macros.xacro
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/robot.urdf.xacro
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/robot_core.xacro
+/home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/ros2_control.xacro
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/launch_sim.launch.py
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/rsp.launch.py
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/worlds/empty.world
