@@ -1,0 +1,11 @@
+source;share/NAV2/hook/cmake_prefix_path.ps1
+source;share/NAV2/hook/cmake_prefix_path.dsv
+source;share/NAV2/hook/cmake_prefix_path.sh
+source;share/NAV2/hook/pythonpath.ps1
+source;share/NAV2/hook/pythonpath.dsv
+source;share/NAV2/hook/pythonpath.sh
+source;share/NAV2/local_setup.bash
+source;share/NAV2/local_setup.dsv
+source;share/NAV2/local_setup.ps1
+source;share/NAV2/local_setup.sh
+source;share/NAV2/local_setup.zsh

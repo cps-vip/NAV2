@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating NAV2.egg-info
+writing NAV2.egg-info/PKG-INFO
+writing dependency_links to NAV2.egg-info/dependency_links.txt
+writing requirements to NAV2.egg-info/requires.txt
+writing top-level names to NAV2.egg-info/top_level.txt
+writing manifest file 'NAV2.egg-info/SOURCES.txt'
+reading manifest file 'NAV2.egg-info/SOURCES.txt'
+writing manifest file 'NAV2.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/NAV2/src/install/NAV2/lib/python3.12/site-packages/NAV2.egg-link (link to .)
+
+Installed /home/ubuntu/NAV2/src/build/NAV2
+running symlink_data
+creating /home/ubuntu/NAV2/src/install/NAV2/share/ament_index
+creating /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index
+creating /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/NAV2/src/build/NAV2/resource/NAV2 -> /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/NAV2/src/build/NAV2/package.xml -> /home/ubuntu/NAV2/src/install/NAV2/share/NAV2

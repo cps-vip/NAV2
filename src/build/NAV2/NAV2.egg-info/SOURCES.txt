@@ -1,0 +1,10 @@
+package.xml
+setup.cfg
+setup.py
+NAV2.egg-info/PKG-INFO
+NAV2.egg-info/SOURCES.txt
+NAV2.egg-info/dependency_links.txt
+NAV2.egg-info/requires.txt
+NAV2.egg-info/top_level.txt
+NAV2.egg-info/zip-safe
+resource/NAV2
