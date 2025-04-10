@@ -4,6 +4,7 @@
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/face.xacro
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/gazebo_control.xacro
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/inertial_macros.xacro
+/home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/lidar.xacro
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/robot.urdf.xacro
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/robot_core.xacro
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/ros2_control.xacro
