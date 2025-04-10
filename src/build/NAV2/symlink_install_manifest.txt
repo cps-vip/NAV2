@@ -7,8 +7,10 @@
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/robot.urdf.xacro
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/robot_core.xacro
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/ros2_control.xacro
+/home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/keyboard.launch.py
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/launch_sim.launch.py
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/rsp.launch.py
+/home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/rviz2.launch.py
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/worlds/empty.world
 /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/package_run_dependencies/NAV2
 /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/parent_prefix_path/NAV2

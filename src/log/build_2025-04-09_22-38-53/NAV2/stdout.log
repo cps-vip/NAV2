@@ -1,0 +1,31 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/config/gaz_ros2_ctl_use_sim.yaml
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/config/gz_bridge.yaml
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/config/my_controllers.yaml
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/face.xacro
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/gazebo_control.xacro
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/inertial_macros.xacro
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/robot.urdf.xacro
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/robot_core.xacro
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/description/ros2_control.xacro
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/keyboard.launch.py
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/launch_sim.launch.py
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/rsp.launch.py
+-- Symlinking: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/rviz2.launch.py
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/worlds/empty.world
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/package_run_dependencies/NAV2
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/parent_prefix_path/NAV2
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/environment/path.sh
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/environment/path.dsv
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/local_setup.bash
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/local_setup.sh
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/local_setup.zsh
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/local_setup.dsv
+-- Symlinking: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/package.dsv
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/packages/NAV2
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/cmake/NAV2Config.cmake
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/cmake/NAV2Config-version.cmake
+-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/package.xml

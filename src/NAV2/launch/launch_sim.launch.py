@@ -26,6 +26,15 @@ def generate_launch_description():
                 )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'false'}.items()
     )
 
+    keyboard = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name),'launch','keyboard.launch.py'
+                )]))
+
+    rviz2 = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name),'launch','rviz2.launch.py'
+                )]))
 
     default_world = os.path.join(
         get_package_share_directory(package_name),
@@ -96,6 +105,8 @@ def generate_launch_description():
     # Launch them all!
     return LaunchDescription([
         rsp,
+        keyboard,
+        rviz2,
         world_arg,
         gazebo,
         spawn_entity,
