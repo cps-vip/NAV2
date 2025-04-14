@@ -16,7 +16,7 @@ def generate_launch_description():
             package='teleop_twist_keyboard',
             executable='teleop_twist_keyboard',
             prefix='xterm -e',
-            remappings=[('/cmd_vel', '/diff_cont/cmd_vel_unstamped')],
+            remappings=[('/cmd_vel', '/cmd_vel_key')],
             output='screen'
         )
     ])
