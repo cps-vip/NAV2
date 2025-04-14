@@ -36,6 +36,21 @@ def generate_launch_description():
                     get_package_share_directory(package_name),'launch','rviz2.launch.py'
                 )]))
 
+    twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
+    twist_mux = Node(
+            package="twist_mux",
+            executable="twist_mux",
+            parameters=[twist_mux_params, {'use_sim_time': True}],
+            remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
+    )
+
+    slam = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name),'launch','slam.launch.py'
+                )]), launch_arguments={'slam_params_file' : os.path.join(
+                    get_package_share_directory(package_name),'config', 'mapper_params_online_async_yaml')}.items()
+    )
+
     default_world = os.path.join(
         get_package_share_directory(package_name),
         'worlds',
@@ -106,6 +121,8 @@ def generate_launch_description():
     return LaunchDescription([
         rsp,
         keyboard,
+        twist_mux,
+        slam,
         rviz2,
         world_arg,
         gazebo,
