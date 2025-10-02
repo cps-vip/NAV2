@@ -23,9 +23,15 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+
 install(
-  DIRECTORY config description launch worlds
+  DIRECTORY config description launch worlds node
   DESTINATION share/${PROJECT_NAME}
+)
+
+install(PROGRAMS
+  node/waypoint_publisher.py
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 ament_package()

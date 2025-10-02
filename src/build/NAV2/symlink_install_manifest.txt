@@ -15,8 +15,11 @@
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/rsp.launch.py
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/rviz2.launch.py
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/slam.launch.py
+/home/ubuntu/NAV2/src/install/NAV2/share/NAV2/launch/waypoint_launch.py
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/worlds/empty.world
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/worlds/obstacles.world
+/home/ubuntu/NAV2/src/install/NAV2/share/NAV2/node/waypoint_publisher.py
+/home/ubuntu/NAV2/src/install/NAV2/lib/NAV2/waypoint_publisher.py
 /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/package_run_dependencies/NAV2
 /home/ubuntu/NAV2/src/install/NAV2/share/ament_index/resource_index/parent_prefix_path/NAV2
 /home/ubuntu/NAV2/src/install/NAV2/share/NAV2/environment/ament_prefix_path.sh
