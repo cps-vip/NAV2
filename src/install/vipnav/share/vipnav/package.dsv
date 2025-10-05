@@ -1,0 +1,8 @@
+source;share/vipnav/hook/cmake_prefix_path.ps1
+source;share/vipnav/hook/cmake_prefix_path.dsv
+source;share/vipnav/hook/cmake_prefix_path.sh
+source;share/vipnav/local_setup.bash
+source;share/vipnav/local_setup.dsv
+source;share/vipnav/local_setup.ps1
+source;share/vipnav/local_setup.sh
+source;share/vipnav/local_setup.zsh

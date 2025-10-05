@@ -1,0 +1,9 @@
+/home/ubuntu/NAV2/src/build/vipnav/CMakeFiles/uninstall.dir
+/home/ubuntu/NAV2/src/build/vipnav/CMakeFiles/vipnav_uninstall.dir
+/home/ubuntu/NAV2/src/build/vipnav/CMakeFiles/test.dir
+/home/ubuntu/NAV2/src/build/vipnav/CMakeFiles/edit_cache.dir
+/home/ubuntu/NAV2/src/build/vipnav/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/NAV2/src/build/vipnav/CMakeFiles/list_install_components.dir
+/home/ubuntu/NAV2/src/build/vipnav/CMakeFiles/install.dir
+/home/ubuntu/NAV2/src/build/vipnav/CMakeFiles/install/local.dir
+/home/ubuntu/NAV2/src/build/vipnav/CMakeFiles/install/strip.dir

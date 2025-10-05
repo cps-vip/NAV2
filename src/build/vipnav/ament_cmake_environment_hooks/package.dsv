@@ -1,0 +1,4 @@
+source;share/vipnav/local_setup.bash
+source;share/vipnav/local_setup.dsv
+source;share/vipnav/local_setup.sh
+source;share/vipnav/local_setup.zsh

@@ -1,0 +1,1 @@
+/home/ubuntu/NAV2/src/vipnav/node/waypoint_publisher.py

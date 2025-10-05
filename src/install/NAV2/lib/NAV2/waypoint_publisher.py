@@ -1,1 +1,0 @@
-/home/ubuntu/NAV2/src/NAV2/node/waypoint_publisher.py

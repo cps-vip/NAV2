@@ -1,0 +1,56 @@
+[0.012s] Invoking command in '/home/ubuntu/NAV2/src/build/vipnav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/NAV2/src/vipnav -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/NAV2/src/install/vipnav
+[0.024s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.248s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.256s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.414s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.414s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.415s] -- Added test 'lint_cmake' to check CMake code style
+[0.417s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.419s] -- Added test 'xmllint' to check XML markup files
+[0.423s] -- Configuring done (0.4s)
+[0.427s] -- Generating done (0.0s)
+[0.428s] -- Build files have been written to: /home/ubuntu/NAV2/src/build/vipnav
+[0.432s] Invoked command in '/home/ubuntu/NAV2/src/build/vipnav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/NAV2/src/vipnav -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/NAV2/src/install/vipnav
+[0.434s] Invoking command in '/home/ubuntu/NAV2/src/build/vipnav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j16 -l16
+[0.473s] Invoked command in '/home/ubuntu/NAV2/src/build/vipnav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j16 -l16
+[0.483s] Invoking command in '/home/ubuntu/NAV2/src/build/vipnav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/NAV2/src/build/vipnav
+[0.492s] -- Install configuration: ""
+[0.493s] -- Execute custom install script
+[0.493s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/gaz_ros2_ctl_use_sim.yaml
+[0.503s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/gz_bridge.yaml
+[0.515s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/mapper_params_online_async.yaml
+[0.524s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/my_controllers.yaml
+[0.533s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/twist_mux.yaml
+[0.545s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/face.xacro
+[0.553s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/gazebo_control.xacro
+[0.562s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/inertial_macros.xacro
+[0.570s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/lidar.xacro
+[0.579s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/robot.urdf.xacro
+[0.590s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/robot_core.xacro
+[0.599s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/ros2_control.xacro
+[0.609s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/keyboard.launch.py
+[0.618s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/launch_sim.launch.py
+[0.627s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/rsp.launch.py
+[0.637s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/rviz2.launch.py
+[0.648s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/slam.launch.py
+[0.656s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/waypoint_launch.py
+[0.665s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/worlds/empty.world
+[0.673s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/worlds/obstacles.world
+[0.682s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/node/waypoint_publisher.py
+[0.691s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/lib/vipnav/waypoint_publisher.py
+[0.700s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/ament_index/resource_index/package_run_dependencies/vipnav
+[0.711s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/ament_index/resource_index/parent_prefix_path/vipnav
+[0.723s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/environment/ament_prefix_path.sh
+[0.736s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/environment/ament_prefix_path.dsv
+[0.747s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/environment/path.sh
+[0.757s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/environment/path.dsv
+[0.766s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/local_setup.bash
+[0.775s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/local_setup.sh
+[0.783s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/local_setup.zsh
+[0.793s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/local_setup.dsv
+[0.802s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/package.dsv
+[0.811s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/ament_index/resource_index/packages/vipnav
+[0.819s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/cmake/vipnavConfig.cmake
+[0.828s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/cmake/vipnavConfig-version.cmake
+[0.838s] -- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/package.xml
+[0.849s] Invoked command in '/home/ubuntu/NAV2/src/build/vipnav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/NAV2/src/build/vipnav

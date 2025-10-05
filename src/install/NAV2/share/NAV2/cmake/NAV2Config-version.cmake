@@ -1,1 +1,0 @@
-/home/ubuntu/NAV2/src/build/NAV2/ament_cmake_core/NAV2Config-version.cmake

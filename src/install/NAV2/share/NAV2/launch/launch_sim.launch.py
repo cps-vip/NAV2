@@ -1,1 +1,0 @@
-/home/ubuntu/NAV2/src/NAV2/launch/launch_sim.launch.py
