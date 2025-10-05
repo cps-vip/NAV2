@@ -9,7 +9,7 @@ import tty
 import select
 import threading
 
-class KeyboardNode(Node):
+class WaypointNode(Node):
     def __init__(self):
         super().__init__('keyboard_node')
         self.get_logger().info('Keyboard node started. Press keys to see them. Press Ctrl+C to exit.')
@@ -18,12 +18,25 @@ class KeyboardNode(Node):
         self.thread = threading.Thread(target=self.keyboard_loop,daemon=True)
         self.thread.start()
 
+        self.publisher = self.create_publisher(PoseStamped, 'goal_pose', 10)
+        self.x = 7.0
+        self.y = 8.0 
+
     def keyboard_loop(self):
         fd = sys.stdin.fileno()
         while self.running:
             rlist, _, _ = select.select([sys.stdin], [], [], 0.0)
-            key = sys.stdin.read(1) if rlist else None
-            self.get_logger().info(f'Key pressed: {repr(key)}') if key else None
+            key = sys.stdin.read(1).rstrip('\n') if rlist else None
+            if key:
+                self.get_logger().info(f'Key pressed: {repr(key)}')
+                pose = PoseStamped()
+                pose.header.frame_id = "map"   # change to your TF frame
+                pose.header.stamp = self.get_clock().now().to_msg()
+                pose.pose.position.x = self.x
+                pose.pose.position.y = self.y
+                pose.pose.orientation.w = 1.0  # facing forward, no rotation
+
+                self.publisher.publish(pose)
 
     def destroy_node(self):
         self.running = False 
@@ -33,7 +46,7 @@ class KeyboardNode(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    node = KeyboardNode()
+    node = WaypointNode()
 
     rclpy.spin(node)
 
