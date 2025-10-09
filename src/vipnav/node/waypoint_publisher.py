@@ -28,9 +28,11 @@ class WaypointNode(Node):
         fd = sys.stdin.fileno()
         while self.running:
             rlist, _, _ = select.select([sys.stdin], [], [], 0.0)
-            key = sys.stdin.read(1).rstrip('\n') if rlist else None
+            key = sys.stdin.readline().rstrip('\n') if rlist else None
             if key:
-                self.get_logger().info(f'Key pressed: {repr(key)}')
+                input = key.split(' ')
+                self.x = float(input[0])
+                self.y = float(input[1])
                 goal_msg = NavigateToPose.Goal()
                 goal_msg.pose.header.frame_id = "map"
                 goal_msg.pose.header.stamp = self.get_clock().now().to_msg()
