@@ -12,12 +12,23 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
+    """
+    Comprehensive launch file for co-simulation with NAV2.
 
-    # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled
-    # !!! MAKE SURE YOU SET THE PACKAGE NAME CORRECTLY !!!
+    Brings up:
+    1. Robot state publisher (RSP) - robot model
+    2. Twist mux - velocity command multiplexing
+    3. SLAM - simultaneous localization and mapping
+    4. Gazebo - physics simulation (headless)
+    5. Robot spawner - spawn robot in Gazebo
+    6. ROS-Gazebo bridge - sensor/actuator communication
+    7. Image bridge - camera topic bridging
+    8. NAV2 bringup - navigation stack + navigate_to_pose action server
+    """
 
-    package_name = "vipnav"  # <--- CHANGE ME
+    package_name = "vipnav"
 
+    # Robot state publisher - publishes robot URDF
     rsp = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             [
@@ -29,30 +40,7 @@ def generate_launch_description():
         launch_arguments={"use_sim_time": "true", "use_ros2_control": "false"}.items(),
     )
 
-    keyboard = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            [
-                os.path.join(
-                    get_package_share_directory(package_name),
-                    "launch",
-                    "keyboard.launch.py",
-                )
-            ]
-        )
-    )
-
-    rviz2 = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            [
-                os.path.join(
-                    get_package_share_directory(package_name),
-                    "launch",
-                    "rviz2.launch.py",
-                )
-            ]
-        )
-    )
-
+    # Twist mux - multiplexes velocity commands from multiple sources
     twist_mux_params = os.path.join(
         get_package_share_directory(package_name), "config", "twist_mux.yaml"
     )
@@ -63,6 +51,7 @@ def generate_launch_description():
         remappings=[("/cmd_vel_out", "/diff_cont/cmd_vel_unstamped")],
     )
 
+    # SLAM - mapping and localization
     slam = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             [
@@ -82,31 +71,23 @@ def generate_launch_description():
         }.items(),
     )
 
-    # Include NAV2 bringup
-    nav2_bringup_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            [
-                os.path.join(
-                    get_package_share_directory("nav2_bringup"),
-                    "launch",
-                    "bringup_launch.py",
-                )
-            ]
-        ),
-        launch_arguments={"slam": "False", "use_sim_time": "true"}.items(),
-    )
-
+    # Gazebo simulator (headless mode)
     default_world = os.path.join(
         get_package_share_directory(package_name), "worlds", "obstacles.world"
     )
 
     world = LaunchConfiguration("world")
+    headless = LaunchConfiguration("headless")
 
     world_arg = DeclareLaunchArgument(
         "world", default_value=default_world, description="World to load"
     )
 
-    # Include the Gazebo launch file, provided by the ros_gz_sim package
+    headless_arg = DeclareLaunchArgument(
+        "headless", default_value="true", description="Run Gazebo in headless mode"
+    )
+
+    # Include the Gazebo launch file
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             [
@@ -118,12 +99,13 @@ def generate_launch_description():
             ]
         ),
         launch_arguments={
+            "headless": headless,
             "gz_args": ["-r -v4 ", world],
             "on_exit_shutdown": "true",
         }.items(),
     )
 
-    # Run the spawner node from the ros_gz_sim package. The entity name doesn't really matter if you only have a single robot.
+    # Robot spawner - spawn robot entity in Gazebo
     spawn_entity = Node(
         package="ros_gz_sim",
         executable="create",
@@ -131,6 +113,7 @@ def generate_launch_description():
         output="screen",
     )
 
+    # ROS-Gazebo bridge - sensor/actuator communication
     bridge_params = os.path.join(
         get_package_share_directory(package_name), "config", "gz_bridge.yaml"
     )
@@ -144,41 +127,43 @@ def generate_launch_description():
         ],
     )
 
+    # Image bridge - camera sensor bridging
     ros_gz_image_bridge = Node(
         package="ros_gz_image",
         executable="image_bridge",
         arguments=["/camera/image_raw"],
     )
 
-    # Code for delaying a node (I haven't tested how effective it is)
-    #
-    # First add the below lines to imports
-    # from launch.actions import RegisterEventHandler
-    # from launch.event_handlers import OnProcessExit
-    #
-    # Then add the following below the current diff_drive_spawner
-    # delayed_diff_drive_spawner = RegisterEventHandler(
-    #     event_handler=OnProcessExit(
-    #         target_action=spawn_entity,
-    #         on_exit=[diff_drive_spawner],
-    #     )
-    # )
-    #
-    # Replace the diff_drive_spawner in the final return with delayed_diff_drive_spawner
+    # NAV2 bringup - navigation stack with navigate_to_pose action server
+    nav2_bringup_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            [
+                os.path.join(
+                    get_package_share_directory("nav2_bringup"),
+                    "launch",
+                    "bringup_launch.py",
+                )
+            ]
+        ),
+        launch_arguments={
+            "slam": "false",  # SLAM is launched separately above
+            "use_sim_time": "true",  # Use simulated time for synchronization
+            "autostart": "true",  # Auto-start navigation
+        }.items(),
+    )
 
     # Launch them all!
     return LaunchDescription(
         [
+            world_arg,
+            headless_arg,
             rsp,
-            keyboard,
             twist_mux,
             slam,
-            nav2_bringup_launch,
-            # rviz2,
-            world_arg,
             gazebo,
             spawn_entity,
             ros_gz_bridge,
             ros_gz_image_bridge,
+            nav2_bringup_launch,
         ]
     )
