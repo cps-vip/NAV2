@@ -35,10 +35,7 @@ class BridgeNode(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = BridgeNode()
-
-    h.helicsCreateBroker("zmq", "", "-f 2")
-    print("broker created")
-
+    
     fedinfo = h.helicsCreateFederateInfo()
     h.helicsFederateInfoSetCoreTypeFromString(fedinfo, "zmq")
     
@@ -46,21 +43,17 @@ def main(args=None):
 
     fed = h.helicsCreateValueFederate("Robot_Bridge_Fed", fedinfo)
 
-    sub = h.helicsFederateRegisterSubscription(fed, "Relay_Sim/fault_dispatch", "")
+    sub = h.helicsFederateRegisterSubscription(fed, "cc/fault_coordinates", "")
     h.helicsFederateEnterExecutingMode(fed)
 
     current_time = 0.0
     while h.helicsFederateGetState(fed) == h.HELICS_STATE_EXECUTION:
         if h.helicsInputIsUpdated(sub):
             fault_name = h.helicsInputGetString(sub)
-            if fault_name in SUBSTATION_MAP:
-                x, y = SUBSTATION_MAP[fault_name]
-                node.send_goal(x, x)
-                print("goal sended")
-            else:
-                node.get_logger().warn(f"Unknown fault location: {fault_name}")
+            x, y = fault_name.split(',')
+            node.send_goal(x, y)
             
-        current_time = h.helicsFederateRequestTime(fed, current_time + 0.1)
+        current_time = h.helicsFederateRequestTime(fed, current_time + 3)
         rclpy.spin_once(node, timeout_sec=0.1)
     
     h.helicsFederateDisconnect(fed)
