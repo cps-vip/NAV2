@@ -23,7 +23,6 @@ def generate_launch_description():
     5. Robot spawner - spawn robot in Gazebo
     6. ROS-Gazebo bridge - sensor/actuator communication
     7. Image bridge - camera topic bridging
-    8. NAV2 bringup - navigation stack + navigate_to_pose action server
     """
 
     package_name = "vipnav"
@@ -39,6 +38,12 @@ def generate_launch_description():
         ),
         launch_arguments={"use_sim_time": "true", "use_ros2_control": "false"}.items(),
     )
+
+    #rviz2 - ros2 visualization. Look directly at ros2 topic.
+    rviz2 = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name),'launch','rviz2.launch.py'
+                )]))
 
     # Twist mux - multiplexes velocity commands from multiple sources
     twist_mux_params = os.path.join(
@@ -134,36 +139,18 @@ def generate_launch_description():
         arguments=["/camera/image_raw"],
     )
 
-    # NAV2 bringup - navigation stack with navigate_to_pose action server
-    nav2_bringup_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            [
-                os.path.join(
-                    get_package_share_directory("nav2_bringup"),
-                    "launch",
-                    "bringup_launch.py",
-                )
-            ]
-        ),
-        launch_arguments={
-            "slam": "false",  # SLAM is launched separately above
-            "use_sim_time": "true",  # Use simulated time for synchronization
-            "autostart": "true",  # Auto-start navigation
-        }.items(),
-    )
-
     # Launch them all!
     return LaunchDescription(
         [
             world_arg,
             headless_arg,
             rsp,
+            rviz2,
             twist_mux,
             slam,
             gazebo,
             spawn_entity,
             ros_gz_bridge,
             ros_gz_image_bridge,
-            nav2_bringup_launch,
         ]
     )

@@ -7,9 +7,9 @@ import helics as h
 import time
 
 SUBSTATION_MAP = {
-    "Transformer_A": (5.0, 2.0),
+    "Transformer_A": (2.0, -2.0),
     "Line_720": (2.0, 2.0),
-    "Relay_1": (0.0, 0.0)
+    "Relay_1": (1.0, 2.0)
 }
 
 class BridgeNode(Node):
@@ -36,6 +36,9 @@ def main(args=None):
     rclpy.init(args=args)
     node = BridgeNode()
 
+    h.helicsCreateBroker("zmq", "", "-f 2")
+    print("broker created")
+
     fedinfo = h.helicsCreateFederateInfo()
     h.helicsFederateInfoSetCoreTypeFromString(fedinfo, "zmq")
     
@@ -52,14 +55,15 @@ def main(args=None):
             fault_name = h.helicsInputGetString(sub)
             if fault_name in SUBSTATION_MAP:
                 x, y = SUBSTATION_MAP[fault_name]
-                node.send_goal(x, y)
+                node.send_goal(x, x)
+                print("goal sended")
             else:
                 node.get_logger().warn(f"Unknown fault location: {fault_name}")
             
-        current_time = h.helicsFederateRequestTime(fed, current_time + 1.0)
+        current_time = h.helicsFederateRequestTime(fed, current_time + 0.1)
         rclpy.spin_once(node, timeout_sec=0.1)
     
-    h.helicsFederateFinalize(fed)
+    h.helicsFederateDisconnect(fed)
     node.destroy_node()
     rclpy.shutdown()
 
