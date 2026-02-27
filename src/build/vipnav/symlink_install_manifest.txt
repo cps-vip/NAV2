@@ -2,6 +2,7 @@
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/gz_bridge.yaml
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/mapper_params_online_async.yaml
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/my_controllers.yaml
+/home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/nav2_params.yaml
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/twist_mux.yaml
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/face.xacro
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/gazebo_control.xacro
@@ -12,6 +13,7 @@
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/ros2_control.xacro
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/keyboard.launch.py
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/launch_sim.launch.py
+/home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/navigation_launch.py
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/rsp.launch.py
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/rviz2.launch.py
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/slam.launch.py
