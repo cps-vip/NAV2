@@ -110,6 +110,11 @@ def generate_launch_description():
         }.items(),
     )
 
+    waypoint_publisher = Node(
+        package="vipnav",
+        executable="waypoint_publisher.py"
+    )
+
     # Robot spawner - spawn robot entity in Gazebo
     spawn_entity = Node(
         package="ros_gz_sim",
@@ -149,6 +154,7 @@ def generate_launch_description():
             twist_mux,
             slam,
             gazebo,
+            waypoint_publisher,
             spawn_entity,
             ros_gz_bridge,
             ros_gz_image_bridge,
