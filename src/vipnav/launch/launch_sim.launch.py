@@ -146,7 +146,7 @@ def generate_launch_description():
     # Launch them all!
     return LaunchDescription(
         [
-            waypoint_publisher,
+            # waypoint_publisher,
             world_arg,
             headless_arg,
             rsp,

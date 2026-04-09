@@ -17,11 +17,12 @@
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/rsp.launch.py
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/rviz2.launch.py
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/slam.launch.py
-/home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/waypoint_launch.py
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/worlds/empty.world
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/worlds/obstacles.world
+/home/ubuntu/NAV2/src/install/vipnav/share/vipnav/node/velocity_listener.cpp
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/node/waypoint_publisher.py
 /home/ubuntu/NAV2/src/install/vipnav/lib/vipnav/waypoint_publisher.py
+/home/ubuntu/NAV2/src/install/vipnav/lib/vipnav/velocity_listener
 /home/ubuntu/NAV2/src/install/vipnav/share/ament_index/resource_index/package_run_dependencies/vipnav
 /home/ubuntu/NAV2/src/install/vipnav/share/ament_index/resource_index/parent_prefix_path/vipnav
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/environment/ament_prefix_path.sh

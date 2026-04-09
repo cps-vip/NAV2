@@ -1,0 +1,15 @@
+[0.013s] Invoking command in '/home/ubuntu/NAV2/src/build/vipnav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j16 -l16
+[0.041s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.265s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.272s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.366s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake:67 (message):
+[0.366s]   ament_cmake_symlink_install_targets() 'node/velocity_listener.cpp' is not a
+[0.366s]   target
+[0.367s] Call Stack (most recent call first):
+[0.367s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/symlink_install/install.cmake:37 (ament_cmake_symlink_install_targets)
+[0.367s]   CMakeLists.txt:37 (install)
+[0.367s] 
+[0.367s] [0m
+[0.367s] -- Configuring incomplete, errors occurred!
+[0.369s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.371s] Invoked command in '/home/ubuntu/NAV2/src/build/vipnav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j16 -l16

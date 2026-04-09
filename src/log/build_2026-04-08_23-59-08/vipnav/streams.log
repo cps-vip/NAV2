@@ -1,0 +1,10 @@
+[0.011s] Invoking command in '/home/ubuntu/NAV2/src/build/vipnav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j16 -l16
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o[0m
+[0.183s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[0.183s]     5 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[0.183s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.183s] compilation terminated.
+[0.184s] gmake[2]: *** [CMakeFiles/velocity_listener.dir/build.make:76: CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o] Error 1
+[0.184s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/velocity_listener.dir/all] Error 2
+[0.184s] gmake: *** [Makefile:146: all] Error 2
+[0.189s] Invoked command in '/home/ubuntu/NAV2/src/build/vipnav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j16 -l16

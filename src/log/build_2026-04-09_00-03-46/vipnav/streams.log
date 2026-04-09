@@ -1,0 +1,18 @@
+[0.013s] Invoking command in '/home/ubuntu/NAV2/src/build/vipnav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j16 -l16
+[0.076s] [ 50%] [32mBuilding CXX object CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o[0m
+[2.588s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.588s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[2.588s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[2.589s]                  from [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:5[m[K:
+[2.589s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:[m[K In lambda function:
+[2.589s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:26:86:[m[K [01;31m[Kerror: [m[K‘[01m[Kangular_z[m[K’ was not declared in this scope
+[2.589s]    26 | >get_logger(), "Linear x: %.2f, Angular z: %.2f", linear_x, [01;31m[Kangular_z[m[K);
+[2.589s]       |                                                             [01;31m[K^~~~~~~~~[m[K
+[2.589s] 
+[2.589s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:24:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klinear_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.589s]    24 |         double [01;35m[Klinear_y[m[K = msg.linear.y;
+[2.589s]       |                [01;35m[K^~~~~~~~[m[K
+[4.685s] gmake[2]: *** [CMakeFiles/velocity_listener.dir/build.make:76: CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o] Error 1
+[4.685s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/velocity_listener.dir/all] Error 2
+[4.685s] gmake: *** [Makefile:146: all] Error 2
+[4.687s] Invoked command in '/home/ubuntu/NAV2/src/build/vipnav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j16 -l16

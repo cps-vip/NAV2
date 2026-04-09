@@ -321,6 +321,9 @@ ament_cmake_symlink_install_directory("/home/ubuntu/NAV2/src/vipnav" DIRECTORY "
 # install(PROGRAMS "node/waypoint_publisher.py" "DESTINATION" "lib/vipnav")
 ament_cmake_symlink_install_programs("/home/ubuntu/NAV2/src/vipnav" PROGRAMS "node/waypoint_publisher.py" "DESTINATION" "lib/vipnav")
 
+# install("TARGETS" "velocity_listener" "DESTINATION" "lib/vipnav")
+include("/home/ubuntu/NAV2/src/build/vipnav/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
 # install(FILES "/home/ubuntu/NAV2/src/build/vipnav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vipnav" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ubuntu/NAV2/src/vipnav" FILES "/home/ubuntu/NAV2/src/build/vipnav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vipnav" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
