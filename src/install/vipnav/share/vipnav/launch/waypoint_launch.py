@@ -1,0 +1,1 @@
+/home/ubuntu/NAV2/src/vipnav/launch/waypoint_launch.py

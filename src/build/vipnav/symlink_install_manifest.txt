@@ -17,6 +17,7 @@
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/rsp.launch.py
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/rviz2.launch.py
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/slam.launch.py
+/home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/waypoint_launch.py
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/worlds/empty.world
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/worlds/obstacles.world
 /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/node/waypoint_publisher.py

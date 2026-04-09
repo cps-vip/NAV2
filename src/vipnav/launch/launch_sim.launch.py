@@ -109,7 +109,11 @@ def generate_launch_description():
             "on_exit_shutdown": "true",
         }.items(),
     )
-
+    waypoint_publisher = Node(
+        package="vipnav",
+        executable="waypoint_publisher.py",
+        name="waypoint_publisher"
+    )
     # Robot spawner - spawn robot entity in Gazebo
     spawn_entity = Node(
         package="ros_gz_sim",
@@ -142,6 +146,7 @@ def generate_launch_description():
     # Launch them all!
     return LaunchDescription(
         [
+            waypoint_publisher,
             world_arg,
             headless_arg,
             rsp,
