@@ -154,6 +154,7 @@ def generate_launch_description():
             twist_mux,
             slam,
             gazebo,
+            waypoint_publisher,
             spawn_entity,
             ros_gz_bridge,
             ros_gz_image_bridge,
