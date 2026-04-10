@@ -170,14 +170,13 @@ ros2 launch vipnav launch_sim.launch.py
 
 Add these displays in RViz:
 
-| Display | Settings | Purpose |
-
-|---------|----------|---------|
-| Grid | Global Options → Fixed Frame: `map` | reference frame |
-| RobotModel | Description Topic: `robot_description` | show robot |
-| LaserScan | Topic: `/scan` | show lidar data |
-| Map | Topic: `/map` | environment |
-| Path | Topic: `/plan` | navigation path |
+| Display     | Settings                                   | Purpose            |
+|------------|--------------------------------------------|--------------------|
+| Grid        | Global Options → Fixed Frame: map           | reference frame    |
+| RobotModel  | Description Topic: robot_description        | show robot         |
+| LaserScan   | Topic: /scan                               | show lidar data    |
+| Map         | Topic: /map                                | environment        |
+| Path        | Topic: /plan                               | navigation path    |
 
 **This is how the Display pane in RViz should look after this step:**
 
