@@ -158,7 +158,7 @@ velocity_listener: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_
 velocity_listener: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_cpp.so
 velocity_listener: /opt/ros/jazzy/lib/librmw.so
 velocity_listener: /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so
-velocity_listener: /opt/ros/jazzy/lib/libfastcdr.so.2.2.5
+velocity_listener: /opt/ros/jazzy/lib/libfastcdr.so.2.2.7
 velocity_listener: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 velocity_listener: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so
 velocity_listener: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so

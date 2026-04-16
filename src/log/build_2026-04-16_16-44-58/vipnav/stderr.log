@@ -1,0 +1,92 @@
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:[m[K In constructor ‘[01m[Kvelocity_listener::[01;32m[Kvelocity_listener[m[K()[m[K’:
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:30:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kstrerro[m[K’ was not declared in this scope; did you mean ‘[01m[Kstrerror[m[K’?
+   30 |       printf("Error %i from open: %s\n", errno, [01;31m[Kstrerro[m[K(errno));
+      |                                                 [01;31m[K^~~~~~~[m[K
+      |                                                 [32m[Kstrerror[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:47:76:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid velocity_listener::[01;32m[Ktopic_callback[m[K(geometry_msgs::msg::Twist)[m[K’
+   47 | ate_subscription<geometry_msgs::msg::Twist>("/cmd_vel", 10, [01;31m[Ktopic_callback[m[K);
+      |                                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:53:8:[m[K [01;36m[Knote: [m[Kdeclared here
+   53 |   void [01;36m[Ktopic_callback[m[K(geometry_msgs::msg::Twist msg) {
+      |        [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:[m[K In member function ‘[01m[Kvoid velocity_listener::[01;32m[Ktopic_callback[m[K(geometry_msgs::msg::Twist)[m[K’:
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:56:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kdouble[m[K’
+   56 |         [01;31m[Kdouble[m[K linear_x = msg.linear.x;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:59:32:[m[K [01;31m[Kerror: [m[K‘[01m[Klinear_x[m[K’ was not declared in this scope
+   59 |         double left_velocity = [01;31m[Klinear_x[m[K + (wheel_distance * angular_z) / 2
+      |                                [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:63:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kto_string()[m[K’
+   63 |         std::string data2 = "TL " + [01;31m[Kstd::to_string()[m[K + "\n";
+      |                                     [01;31m[K~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:12[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:289:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::[01;32m[Kto_string[m[K(const rclcpp::Parameter&)[m[K’
+  289 | [01;36m[Kto_string[m[K(const rclcpp::Parameter & param);
+      | [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:289:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:294:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::[01;32m[Kto_string[m[K(const vector<rclcpp::Parameter>&)[m[K’
+  294 | [01;36m[Kto_string[m[K(const std::vector<rclcpp::Parameter> & parameters);
+      | [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:294:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+In file included from [01m[K/usr/include/c++/13/string:54[m[K,
+                 from [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:3[m[K:
+[01m[K/usr/include/c++/13/bits/basic_string.h:4162:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(int)[m[K’
+ 4162 |   [01;36m[Kto_string[m[K(int __val)
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:4162:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/usr/include/c++/13/bits/basic_string.h:4177:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(unsigned int)[m[K’
+ 4177 |   [01;36m[Kto_string[m[K(unsigned __val)
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:4177:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/usr/include/c++/13/bits/basic_string.h:4189:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(long int)[m[K’
+ 4189 |   [01;36m[Kto_string[m[K(long __val)
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:4189:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/usr/include/c++/13/bits/basic_string.h:4204:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(long unsigned int)[m[K’
+ 4204 |   [01;36m[Kto_string[m[K(unsigned long __val)
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:4204:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/usr/include/c++/13/bits/basic_string.h:4216:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(long long int)[m[K’
+ 4216 |   [01;36m[Kto_string[m[K(long long __val)
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:4216:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/usr/include/c++/13/bits/basic_string.h:4229:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(long long unsigned int)[m[K’
+ 4229 |   [01;36m[Kto_string[m[K(unsigned long long __val)
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:4229:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/usr/include/c++/13/bits/basic_string.h:4241:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(float)[m[K’
+ 4241 |   [01;36m[Kto_string[m[K(float __val)
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:4241:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/usr/include/c++/13/bits/basic_string.h:4251:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(double)[m[K’
+ 4251 |   [01;36m[Kto_string[m[K(double __val)
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:4251:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/usr/include/c++/13/bits/basic_string.h:4261:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(long double)[m[K’
+ 4261 |   [01;36m[Kto_string[m[K(long double __val)
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:4261:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:67:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_port[m[K’ was not declared in this scope
+   67 |         write([01;31m[Kserial_port[m[K, data1.c_str(), data.size())
+      |               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kdata1[m[K’ was not declared in this scope; did you mean ‘[01m[Kdata2[m[K’?
+   67 |         write(serial_port, [01;31m[Kdata1[m[K.c_str(), data.size())
+      |                            [01;31m[K^~~~~[m[K
+      |                            [32m[Kdata2[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:67:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kdata[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::data[m[K’?
+   67 |         write(serial_port, data1.c_str(), [01;31m[Kdata[m[K.size())
+      |                                           [01;31m[K^~~~[m[K
+      |                                           [32m[Kstd::data[m[K
+In file included from [01m[K/usr/include/c++/13/string:53[m[K:
+[01m[K/usr/include/c++/13/bits/range_access.h:346:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::data[m[K’ declared here
+  346 |     [01;36m[Kdata[m[K(initializer_list<_Tp> __il) noexcept
+      |     [01;36m[K^~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:59:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kleft_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   59 |         double [01;35m[Kleft_velocity[m[K = linear_x + (wheel_distance * angular_z) / 2
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/velocity_listener.dir/build.make:76: CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/velocity_listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

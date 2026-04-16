@@ -1203,7 +1203,7 @@
 			},
 			{
 				"backtrace" : 64,
-				"fragment" : "/opt/ros/jazzy/lib/libfastcdr.so.2.2.5",
+				"fragment" : "/opt/ros/jazzy/lib/libfastcdr.so.2.2.7",
 				"role" : "libraries"
 			},
 			{

@@ -1,0 +1,98 @@
+[0.010s] Invoking command in '/home/ubuntu/NAV2/src/build/vipnav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j16 -l16
+[0.064s] [ 50%] [32mBuilding CXX object CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o[0m
+[2.054s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:[m[K In member function ‘[01m[Kvoid velocity_listener::[01;32m[Ktopic_callback[m[K(geometry_msgs::msg::Twist)[m[K’:
+[2.054s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:57:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kdouble[m[K’
+[2.054s]    57 |         [01;31m[Kdouble[m[K linear_x = msg.linear.x;
+[2.054s]       |         [01;31m[K^~~~~~[m[K
+[2.060s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:60:32:[m[K [01;31m[Kerror: [m[K‘[01m[Klinear_x[m[K’ was not declared in this scope
+[2.060s]    60 |         double left_velocity = [01;31m[Klinear_x[m[K + (wheel_distance * angular_z) / 2
+[2.060s]       |                                [01;31m[K^~~~~~~~[m[K
+[2.060s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:64:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kto_string()[m[K’
+[2.060s]    64 |         std::string data2 = "TL " + [01;31m[Kstd::to_string()[m[K + "\n";
+[2.060s]       |                                     [01;31m[K~~~~~~~~~~~~~~^~[m[K
+[2.061s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:25[m[K,
+[2.061s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[2.061s]                  from [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:12[m[K:
+[2.061s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:289:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::[01;32m[Kto_string[m[K(const rclcpp::Parameter&)[m[K’
+[2.061s]   289 | [01;36m[Kto_string[m[K(const rclcpp::Parameter & param);
+[2.061s]       | [01;36m[K^~~~~~~~~[m[K
+[2.062s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:289:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.062s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:294:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::[01;32m[Kto_string[m[K(const vector<rclcpp::Parameter>&)[m[K’
+[2.062s]   294 | [01;36m[Kto_string[m[K(const std::vector<rclcpp::Parameter> & parameters);
+[2.062s]       | [01;36m[K^~~~~~~~~[m[K
+[2.062s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:294:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.062s] In file included from [01m[K/usr/include/c++/13/string:54[m[K,
+[2.062s]                  from [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:3[m[K:
+[2.062s] [01m[K/usr/include/c++/13/bits/basic_string.h:4162:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(int)[m[K’
+[2.062s]  4162 |   [01;36m[Kto_string[m[K(int __val)
+[2.062s]       |   [01;36m[K^~~~~~~~~[m[K
+[2.062s] [01m[K/usr/include/c++/13/bits/basic_string.h:4162:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.062s] [01m[K/usr/include/c++/13/bits/basic_string.h:4177:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(unsigned int)[m[K’
+[2.062s]  4177 |   [01;36m[Kto_string[m[K(unsigned __val)
+[2.062s]       |   [01;36m[K^~~~~~~~~[m[K
+[2.062s] [01m[K/usr/include/c++/13/bits/basic_string.h:4177:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.062s] [01m[K/usr/include/c++/13/bits/basic_string.h:4189:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(long int)[m[K’
+[2.062s]  4189 |   [01;36m[Kto_string[m[K(long __val)
+[2.062s]       |   [01;36m[K^~~~~~~~~[m[K
+[2.062s] [01m[K/usr/include/c++/13/bits/basic_string.h:4189:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.062s] [01m[K/usr/include/c++/13/bits/basic_string.h:4204:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(long unsigned int)[m[K’
+[2.063s]  4204 |   [01;36m[Kto_string[m[K(unsigned long __val)
+[2.063s]       |   [01;36m[K^~~~~~~~~[m[K
+[2.063s] [01m[K/usr/include/c++/13/bits/basic_string.h:4204:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.063s] [01m[K/usr/include/c++/13/bits/basic_string.h:4216:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(long long int)[m[K’
+[2.063s]  4216 |   [01;36m[Kto_string[m[K(long long __val)
+[2.063s]       |   [01;36m[K^~~~~~~~~[m[K
+[2.063s] [01m[K/usr/include/c++/13/bits/basic_string.h:4216:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.063s] [01m[K/usr/include/c++/13/bits/basic_string.h:4229:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(long long unsigned int)[m[K’
+[2.063s]  4229 |   [01;36m[Kto_string[m[K(unsigned long long __val)
+[2.063s]       |   [01;36m[K^~~~~~~~~[m[K
+[2.063s] [01m[K/usr/include/c++/13/bits/basic_string.h:4229:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.063s] [01m[K/usr/include/c++/13/bits/basic_string.h:4241:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(float)[m[K’
+[2.063s]  4241 |   [01;36m[Kto_string[m[K(float __val)
+[2.063s]       |   [01;36m[K^~~~~~~~~[m[K
+[2.063s] [01m[K/usr/include/c++/13/bits/basic_string.h:4241:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.063s] [01m[K/usr/include/c++/13/bits/basic_string.h:4251:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(double)[m[K’
+[2.063s]  4251 |   [01;36m[Kto_string[m[K(double __val)
+[2.063s]       |   [01;36m[K^~~~~~~~~[m[K
+[2.064s] [01m[K/usr/include/c++/13/bits/basic_string.h:4251:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.064s] [01m[K/usr/include/c++/13/bits/basic_string.h:4261:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string std::__cxx11::[01;32m[Kto_string[m[K(long double)[m[K’
+[2.064s]  4261 |   [01;36m[Kto_string[m[K(long double __val)
+[2.064s]       |   [01;36m[K^~~~~~~~~[m[K
+[2.064s] [01m[K/usr/include/c++/13/bits/basic_string.h:4261:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.067s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:68:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_port[m[K’ was not declared in this scope
+[2.067s]    68 |         write([01;31m[Kserial_port[m[K, data1.c_str(), data1.size())
+[2.067s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[2.072s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:68:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kdata1[m[K’ was not declared in this scope; did you mean ‘[01m[Kdata2[m[K’?
+[2.072s]    68 |         write(serial_port, [01;31m[Kdata1[m[K.c_str(), data1.size())
+[2.072s]       |                            [01;31m[K^~~~~[m[K
+[2.072s]       |                            [32m[Kdata2[m[K
+[2.072s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:60:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kleft_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.072s]    60 |         double [01;35m[Kleft_velocity[m[K = linear_x + (wheel_distance * angular_z) / 2
+[2.072s]       |                [01;35m[K^~~~~~~~~~~~~[m[K
+[2.524s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[2.524s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.524s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.524s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.525s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.525s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+[2.525s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+[2.525s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.525s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.525s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K:
+[2.525s] /opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<void (velocity_listener::*)(geometry_msgs::msg::Twist_<std::allocator<void> >)>[m[K’:
+[2.525s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp:396:25:[m[K   recursively required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT> struct rclcpp::detail::SubscriptionCallbackTypeHelper<MessageT, CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value, void>::type> [35m[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = void (velocity_listener::*)(geometry_msgs::msg::Twist_<std::allocator<void> >)][m[K[m[K’
+[2.525s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp:396:25:[m[K   required from ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::[01;32m[Kset[m[K(CallbackT) [35m[K[with CallbackT = void (velocity_listener::*)(geometry_msgs::msg::Twist_<std::allocator<void> >); MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[2.525s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:93:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::[01;32m[Kcreate_subscription_factory[m[K(CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<topic_statistics::SubscriptionTopicStatistics>) [35m[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = void (velocity_listener::*)(geometry_msgs::msg::Twist_<std::allocator<void> >); AllocatorT = std::allocator<void>; SubscriptionT = Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >][m[K[m[K’
+[2.525s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:121:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::[01;32m[Kcreate_subscription[m[K(NodeParametersT&, NodeTopicsT&, const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [35m[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = void (velocity_listener::*)(geometry_msgs::msg::Twist_<std::allocator<void> >); AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >][m[K[m[K’
+[2.526s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:190:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::[01;32m[Kcreate_subscription[m[K(NodeT&, const std::string&, const QoS&, CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [35m[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = void (velocity_listener::*)(geometry_msgs::msg::Twist_<std::allocator<void> >); AllocatorT = std::allocator<void>; SubscriptionT = Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; NodeT = Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >][m[K[m[K’
+[2.526s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::[01;32m[Kcreate_subscription[m[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [35m[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = void (velocity_listener::*)(geometry_msgs::msg::Twist_<std::allocator<void> >); AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >][m[K[m[K’
+[2.526s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:47:59:[m[K   required from here
+[2.526s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:52:40:[m[K [01;31m[Kerror: [m[K‘[01m[Koperator()[m[K’ is not a member of ‘[01m[Kvoid (velocity_listener::*)(geometry_msgs::msg::Twist_<std::allocator<void> >)[m[K’
+[2.526s]    52 |     typename function_traits<decltype( [01;31m[K&FunctionT::operator()[m[K)>::arguments>::type;
+[2.526s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.526s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:52:40:[m[K [01;31m[Kerror: [m[K‘[01m[Koperator()[m[K’ is not a member of ‘[01m[Kvoid (velocity_listener::*)(geometry_msgs::msg::Twist_<std::allocator<void> >)[m[K’
+[2.526s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:52:40:[m[K [01;31m[Kerror: [m[K‘[01m[Koperator()[m[K’ is not a member of ‘[01m[Kvoid (velocity_listener::*)(geometry_msgs::msg::Twist_<std::allocator<void> >)[m[K’
+[3.948s] gmake[2]: *** [CMakeFiles/velocity_listener.dir/build.make:76: CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o] Error 1
+[3.948s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/velocity_listener.dir/all] Error 2
+[3.948s] gmake: *** [Makefile:146: all] Error 2
+[3.950s] Invoked command in '/home/ubuntu/NAV2/src/build/vipnav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j16 -l16

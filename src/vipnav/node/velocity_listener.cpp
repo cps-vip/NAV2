@@ -1,6 +1,13 @@
 #include <chrono>
 #include <memory>
 #include <string>
+#include <iostream>
+
+#include <fcntl.h>
+#include <termios.h>
+#include <unistd.h>
+#include <errno.h>
+
 #include "geometry_msgs/msg/twist.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
@@ -17,21 +24,51 @@ public:
   velocity_listener()
   : Node("velocity_listener")
   {
-    auto topic_callback =
-      [this](geometry_msgs::msg::Twist msg) -> void {
-        
-        double linear_x = msg.linear.x;
-        double angular_y = msg.angular.z;
+    serial_port = open("/dev/ttyAMA0", O_RDWR);
 
-        RCLCPP_INFO(this->get_logger(), "Linear x: %.2f, angular z: %.2f", linear_x, angular_y);
-      };
+    if (serial_port < 0) {
+      printf("Error %i from open: %s\n", errno, strerror(errno));
+      return;
+    }
+
+    struct termios tty;
+
+    tcgetattr(serial_port, &tty);
+    cfsetispeed(&tty, B115200);
+
+    tty.c_cflag &= ~PARENB;
+    tty.c_cflag &= ~CSTOPB;
+    tty.c_cflag &= ~CSIZE;
+    tty.c_cflag |= CS8;
+
+    tcsetattr(serial_port, TCSANOW, &tty);
 
     subscription_ =
-      this->create_subscription<geometry_msgs::msg::Twist>("/cmd_vel", 10, topic_callback);
+      this->create_subscription<geometry_msgs::msg::Twist>(
+        "/cmd_vel", 10, &velocity_listener::topic_callback);
   }
-
-private:
+ 
+private: 
   rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscription_;
+  int serial_port = -1;
+
+  void topic_callback(geometry_msgs::msg::Twist msg) {
+
+        const double wheel_distance = 15.0;
+        double linear_x = msg.linear.x;
+        double angular_z = msg.angular.z;
+
+        double right_velocity = linear_x + (wheel_distance * angular_z) / 2;
+        double left_velocity = linear_x - (wheel_distance * angular_z) / 2;
+
+        std::string data1 = "TR " + std::to_string(right_velocity) + "\n";
+        std::string data2 = "TL " + std::to_string(left_velocity) + "\n";
+
+        RCLCPP_INFO(this->get_logger(), "Linear x: %.2f, angular z: %.2f", linear_x, angular_z);
+
+        write(serial_port, data1.c_str(), data1.size())
+        write(serial_port, data2.c_str(), data2.size())
+  }
 };
 
 int main(int argc, char * argv[])
