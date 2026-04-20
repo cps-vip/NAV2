@@ -9,6 +9,11 @@
       name="gz::sim::systems::Physics">
     </plugin>
     <plugin
+      filename="gz-sim-thermal-system"
+      name="gz::sim::systems::Thermal">
+      <ambient_temperature>298.15</ambient_temperature>
+    </plugin>
+    <plugin
       filename="gz-sim-user-commands-system"
       name="gz::sim::systems::UserCommands">
     </plugin>
