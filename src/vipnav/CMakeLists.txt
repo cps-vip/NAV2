@@ -31,6 +31,7 @@ install(
 
 install(PROGRAMS
   node/waypoint_publisher.py
+  node/thermal_inspector.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
