@@ -171,16 +171,19 @@
       <self_collide>false</self_collide>
     </model>
     <model name="overheating_transformer">
-      <pose>2.0 -2.0 0.5 0 0 0</pose>
+      <pose>2.0 -2.0 0.5 0 0 0</pose> 
       <link name="link">
         <visual name="visual">
           <geometry><box><size>0.5 0.5 1.0</size></box></geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+          </material>
         </visual>
         <collision name="collision">
           <geometry><box><size>0.5 0.5 1.0</size></box></geometry>
         </collision>
         <plugin filename="gz-sim-thermal-system" name="gz::sim::systems::Thermal">
-          <temperature>400.0</temperature>
+          <temperature>400.0</temperature> 
         </plugin>
       </link>
     </model>
