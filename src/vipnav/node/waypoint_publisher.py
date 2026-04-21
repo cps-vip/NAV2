@@ -12,7 +12,7 @@ import numpy as np
 # Updated to match the actual GLM object name from our previous fix
 SUBSTATION_MAP = {
     "substation_transformer": (2.0, -2.0),
-    "Line_720": (2.0, 2.0),
+    "Line_720": (0.5, 0.5),
     "Relay_1": (1.0, 2.0)
 }
 
@@ -114,7 +114,7 @@ def main(args=None):
     # Updated to listen to the new thermal fault topic
     dummy_sub = h.helicsFederateRegisterSubscription(fed, "cc/fault_coordinates", "")
 
-    sub = h.helicsFederateRegisterSubscription(fed, "Thermal_Monitor_Fed/cc/thermal_fault", "")
+    sub = h.helicsFederateRegisterSubscription(fed, "cc/thermal_fault", "")
     h.helicsFederateEnterExecutingMode(fed)
 
     current_time = 0.0
