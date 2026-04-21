@@ -1,0 +1,18 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o[0m
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:[m[K In constructor ‘[01m[Kvelocity_listener::[01;32m[Kvelocity_listener[m[K()[m[K’:
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:39:44:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid velocity_listener::[01;32m[Ktopic_callback[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’
+   39 |         "/cmd_vel", 10, [01;31m[Kvelocity_listener::topic_callback[m[K);
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:46:8:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |   void [01;36m[Ktopic_callback[m[K(const geometry_msgs::msg::Twist::SharedPtr msg) {
+      |        [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:[m[K In member function ‘[01m[Kvoid velocity_listener::[01;32m[Ktopic_callback[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:49:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Klinear[m[K’
+   49 |         double linear_x = msg.[01;31m[Klinear[m[K.x;
+      |                               [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:50:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kangular[m[K’
+   50 |         double angular_z = msg.[01;31m[Kangular[m[K.z;
+      |                                [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/velocity_listener.dir/build.make:76: CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/velocity_listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

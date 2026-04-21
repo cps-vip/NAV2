@@ -1,0 +1,220 @@
+[0.000000] (-) TimerEvent: {}
+[0.000473] (vipnav) JobQueued: {'identifier': 'vipnav', 'dependencies': OrderedDict()}
+[0.000552] (vipnav) JobStarted: {'identifier': 'vipnav'}
+[0.068299] (vipnav) JobProgress: {'identifier': 'vipnav', 'progress': 'cmake'}
+[0.068983] (vipnav) JobProgress: {'identifier': 'vipnav', 'progress': 'build'}
+[0.069613] (vipnav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/NAV2/src/build/vipnav', '--', '-j20', '-l20'], 'cwd': '/home/ubuntu/NAV2/src/build/vipnav', 'env': OrderedDict({'VNCDESKTOP': '8efbbdd0fb5c:1 (ubuntu)', 'XDG_ACTIVATION_TOKEN': 'caja-297-8efbbdd0fb5c-terminator-0_TIME14599705', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'QT_SCALE_FACTOR': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ubuntu', 'SUPERVISOR_GROUP_NAME': 'vnc', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': '8efbbdd0fb5c', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/software/HELICS/install/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/NAV2', 'GIO_LAUNCHED_DESKTOP_FILE': '/home/ubuntu/Desktop/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/tmp/dbus-Prh37MQOAJ,guid=a5c46ed9f720a85dde8e4a8569e7d89b', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '713', 'GNOME_KEYRING_CONTROL': '/home/ubuntu/.cache/keyring-HQPWN3', 'CPLUS_INCLUDE_PATH': ':/home/ubuntu/software/HELICS/include', 'COLCON_PREFIX_PATH': '/home/ubuntu/NAV2/src/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/home/ubuntu/software/GridLAB-D/bin:/home/ubuntu/software/HELICS/install/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/8efbbdd0fb5c:@/tmp/.ICE-unix/79,unix/8efbbdd0fb5c:/tmp/.ICE-unix/79', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'GLPATH': '/home/ubuntu/software/GridLAB-D/share', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SUPERVISOR_ENABLED': '1', 'SSH_AUTH_SOCK': '/home/ubuntu/.cache/keyring-HQPWN3/ssh', 'AMENT_PREFIX_PATH': '/home/ubuntu/NAV2/src/install/vipnav:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'CMAKE_ARGS': '-DCMAKE_CXX_STANDARD=20', 'TERMINATOR_UUID': 'urn:uuid:2aca8e71-6df5-4784-b9e6-d830fd33169a', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PASSWD': 'ubuntu', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'SUPERVISOR_PROCESS_NAME': 'vnc', 'PWD': '/home/ubuntu/NAV2/src/build/vipnav', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/ubuntu/NAV2/src/install/vipnav:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'QT_FONT_DPI': '96'}), 'shell': False}
+[0.098178] (-) TimerEvent: {}
+[0.198527] (-) TimerEvent: {}
+[0.298976] (-) TimerEvent: {}
+[0.399375] (-) TimerEvent: {}
+[0.499767] (-) TimerEvent: {}
+[0.600188] (-) TimerEvent: {}
+[0.700539] (-) TimerEvent: {}
+[0.800880] (-) TimerEvent: {}
+[0.901230] (-) TimerEvent: {}
+[1.001597] (-) TimerEvent: {}
+[1.101921] (-) TimerEvent: {}
+[1.202285] (-) TimerEvent: {}
+[1.302676] (-) TimerEvent: {}
+[1.403066] (-) TimerEvent: {}
+[1.406833] (vipnav) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o\x1b[0m\n'}
+[1.503350] (-) TimerEvent: {}
+[1.603674] (-) TimerEvent: {}
+[1.704076] (-) TimerEvent: {}
+[1.804731] (-) TimerEvent: {}
+[1.905402] (-) TimerEvent: {}
+[2.005960] (-) TimerEvent: {}
+[2.106668] (-) TimerEvent: {}
+[2.207780] (-) TimerEvent: {}
+[2.308481] (-) TimerEvent: {}
+[2.410121] (-) TimerEvent: {}
+[2.511632] (-) TimerEvent: {}
+[2.612642] (-) TimerEvent: {}
+[2.713228] (-) TimerEvent: {}
+[2.814018] (-) TimerEvent: {}
+[2.915307] (-) TimerEvent: {}
+[3.015786] (-) TimerEvent: {}
+[3.116277] (-) TimerEvent: {}
+[3.216655] (-) TimerEvent: {}
+[3.317072] (-) TimerEvent: {}
+[3.417529] (-) TimerEvent: {}
+[3.517864] (-) TimerEvent: {}
+[3.618446] (-) TimerEvent: {}
+[3.718927] (-) TimerEvent: {}
+[3.819352] (-) TimerEvent: {}
+[3.919846] (-) TimerEvent: {}
+[4.020431] (-) TimerEvent: {}
+[4.120965] (-) TimerEvent: {}
+[4.221409] (-) TimerEvent: {}
+[4.321858] (-) TimerEvent: {}
+[4.422463] (-) TimerEvent: {}
+[4.523136] (-) TimerEvent: {}
+[4.623796] (-) TimerEvent: {}
+[4.724315] (-) TimerEvent: {}
+[4.825125] (-) TimerEvent: {}
+[4.925955] (-) TimerEvent: {}
+[5.026649] (-) TimerEvent: {}
+[5.127562] (-) TimerEvent: {}
+[5.228829] (-) TimerEvent: {}
+[5.329805] (-) TimerEvent: {}
+[5.430506] (-) TimerEvent: {}
+[5.531529] (-) TimerEvent: {}
+[5.632296] (-) TimerEvent: {}
+[5.732873] (-) TimerEvent: {}
+[5.834717] (-) TimerEvent: {}
+[5.935590] (-) TimerEvent: {}
+[6.036144] (-) TimerEvent: {}
+[6.136772] (-) TimerEvent: {}
+[6.237298] (-) TimerEvent: {}
+[6.337782] (-) TimerEvent: {}
+[6.438374] (-) TimerEvent: {}
+[6.538896] (-) TimerEvent: {}
+[6.639454] (-) TimerEvent: {}
+[6.740183] (-) TimerEvent: {}
+[6.840968] (-) TimerEvent: {}
+[6.941764] (-) TimerEvent: {}
+[7.042622] (-) TimerEvent: {}
+[7.143726] (-) TimerEvent: {}
+[7.244893] (-) TimerEvent: {}
+[7.345893] (-) TimerEvent: {}
+[7.446726] (-) TimerEvent: {}
+[7.547878] (-) TimerEvent: {}
+[7.648953] (-) TimerEvent: {}
+[7.751507] (-) TimerEvent: {}
+[7.852675] (-) TimerEvent: {}
+[7.953472] (-) TimerEvent: {}
+[8.054098] (-) TimerEvent: {}
+[8.154589] (-) TimerEvent: {}
+[8.255036] (-) TimerEvent: {}
+[8.355638] (-) TimerEvent: {}
+[8.456297] (-) TimerEvent: {}
+[8.556786] (-) TimerEvent: {}
+[8.657267] (-) TimerEvent: {}
+[8.757728] (-) TimerEvent: {}
+[8.858238] (-) TimerEvent: {}
+[8.958821] (-) TimerEvent: {}
+[9.059576] (-) TimerEvent: {}
+[9.160445] (-) TimerEvent: {}
+[9.261618] (-) TimerEvent: {}
+[9.362891] (-) TimerEvent: {}
+[9.463510] (-) TimerEvent: {}
+[9.564205] (-) TimerEvent: {}
+[9.664598] (-) TimerEvent: {}
+[9.765025] (-) TimerEvent: {}
+[9.865452] (-) TimerEvent: {}
+[9.965938] (-) TimerEvent: {}
+[10.066534] (-) TimerEvent: {}
+[10.166936] (-) TimerEvent: {}
+[10.267365] (-) TimerEvent: {}
+[10.368103] (-) TimerEvent: {}
+[10.469009] (-) TimerEvent: {}
+[10.570080] (-) TimerEvent: {}
+[10.671437] (-) TimerEvent: {}
+[10.771931] (-) TimerEvent: {}
+[10.872429] (-) TimerEvent: {}
+[10.973057] (-) TimerEvent: {}
+[11.073693] (-) TimerEvent: {}
+[11.174534] (-) TimerEvent: {}
+[11.275419] (-) TimerEvent: {}
+[11.376459] (-) TimerEvent: {}
+[11.477409] (-) TimerEvent: {}
+[11.578259] (-) TimerEvent: {}
+[11.679172] (-) TimerEvent: {}
+[11.779988] (-) TimerEvent: {}
+[11.880621] (-) TimerEvent: {}
+[11.981492] (-) TimerEvent: {}
+[12.081951] (-) TimerEvent: {}
+[12.182408] (-) TimerEvent: {}
+[12.283054] (-) TimerEvent: {}
+[12.383501] (-) TimerEvent: {}
+[12.483950] (-) TimerEvent: {}
+[12.584450] (-) TimerEvent: {}
+[12.685003] (-) TimerEvent: {}
+[12.785646] (-) TimerEvent: {}
+[12.886244] (-) TimerEvent: {}
+[12.986874] (-) TimerEvent: {}
+[13.087561] (-) TimerEvent: {}
+[13.188033] (-) TimerEvent: {}
+[13.288661] (-) TimerEvent: {}
+[13.389370] (-) TimerEvent: {}
+[13.489931] (-) TimerEvent: {}
+[13.590627] (-) TimerEvent: {}
+[13.691468] (-) TimerEvent: {}
+[13.791985] (-) TimerEvent: {}
+[13.892541] (-) TimerEvent: {}
+[13.993146] (-) TimerEvent: {}
+[14.093837] (-) TimerEvent: {}
+[14.194714] (-) TimerEvent: {}
+[14.295678] (-) TimerEvent: {}
+[14.355783] (vipnav) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable velocity_listener\x1b[0m\n'}
+[14.395888] (-) TimerEvent: {}
+[14.496617] (-) TimerEvent: {}
+[14.597306] (-) TimerEvent: {}
+[14.697817] (-) TimerEvent: {}
+[14.798236] (-) TimerEvent: {}
+[14.898722] (-) TimerEvent: {}
+[14.999179] (-) TimerEvent: {}
+[15.099591] (-) TimerEvent: {}
+[15.200277] (-) TimerEvent: {}
+[15.300662] (-) TimerEvent: {}
+[15.401001] (-) TimerEvent: {}
+[15.454022] (vipnav) StdoutLine: {'line': b'[100%] Built target velocity_listener\n'}
+[15.501128] (-) TimerEvent: {}
+[15.601442] (-) TimerEvent: {}
+[15.671907] (vipnav) CommandEnded: {'returncode': 0}
+[15.673092] (vipnav) JobProgress: {'identifier': 'vipnav', 'progress': 'install'}
+[15.701572] (-) TimerEvent: {}
+[15.801909] (-) TimerEvent: {}
+[15.898775] (vipnav) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/NAV2/src/build/vipnav'], 'cwd': '/home/ubuntu/NAV2/src/build/vipnav', 'env': OrderedDict({'VNCDESKTOP': '8efbbdd0fb5c:1 (ubuntu)', 'XDG_ACTIVATION_TOKEN': 'caja-297-8efbbdd0fb5c-terminator-0_TIME14599705', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'QT_SCALE_FACTOR': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ubuntu', 'SUPERVISOR_GROUP_NAME': 'vnc', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': '8efbbdd0fb5c', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/software/HELICS/install/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/NAV2', 'GIO_LAUNCHED_DESKTOP_FILE': '/home/ubuntu/Desktop/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/tmp/dbus-Prh37MQOAJ,guid=a5c46ed9f720a85dde8e4a8569e7d89b', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '713', 'GNOME_KEYRING_CONTROL': '/home/ubuntu/.cache/keyring-HQPWN3', 'CPLUS_INCLUDE_PATH': ':/home/ubuntu/software/HELICS/include', 'COLCON_PREFIX_PATH': '/home/ubuntu/NAV2/src/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/home/ubuntu/software/GridLAB-D/bin:/home/ubuntu/software/HELICS/install/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/8efbbdd0fb5c:@/tmp/.ICE-unix/79,unix/8efbbdd0fb5c:/tmp/.ICE-unix/79', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'GLPATH': '/home/ubuntu/software/GridLAB-D/share', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SUPERVISOR_ENABLED': '1', 'SSH_AUTH_SOCK': '/home/ubuntu/.cache/keyring-HQPWN3/ssh', 'AMENT_PREFIX_PATH': '/home/ubuntu/NAV2/src/install/vipnav:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'CMAKE_ARGS': '-DCMAKE_CXX_STANDARD=20', 'TERMINATOR_UUID': 'urn:uuid:2aca8e71-6df5-4784-b9e6-d830fd33169a', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PASSWD': 'ubuntu', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'SUPERVISOR_PROCESS_NAME': 'vnc', 'PWD': '/home/ubuntu/NAV2/src/build/vipnav', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/ubuntu/NAV2/src/install/vipnav:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'QT_FONT_DPI': '96'}), 'shell': False}
+[15.902044] (-) TimerEvent: {}
+[16.002336] (-) TimerEvent: {}
+[16.102714] (-) TimerEvent: {}
+[16.134659] (vipnav) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.136016] (vipnav) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[16.137466] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/gaz_ros2_ctl_use_sim.yaml\n'}
+[16.137684] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/gz_bridge.yaml\n'}
+[16.137933] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/mapper_params_online_async.yaml\n'}
+[16.138023] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/my_controllers.yaml\n'}
+[16.138327] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/nav2_params.yaml\n'}
+[16.138563] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/config/twist_mux.yaml\n'}
+[16.138839] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/face.xacro\n'}
+[16.139044] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/gazebo_control.xacro\n'}
+[16.139350] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/inertial_macros.xacro\n'}
+[16.139649] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/lidar.xacro\n'}
+[16.139955] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/robot.urdf.xacro\n'}
+[16.140157] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/robot_core.xacro\n'}
+[16.140288] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/description/ros2_control.xacro\n'}
+[16.140387] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/keyboard.launch.py\n'}
+[16.140653] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/launch_sim.launch.py\n'}
+[16.140740] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/navigation_launch.py\n'}
+[16.140791] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/rsp.launch.py\n'}
+[16.140887] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/rviz2.launch.py\n'}
+[16.141020] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/launch/slam.launch.py\n'}
+[16.141379] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/worlds/empty.world\n'}
+[16.141587] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/worlds/obstacles.world\n'}
+[16.141730] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/node/velocity_listener.cpp\n'}
+[16.141867] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/node/waypoint_publisher.py\n'}
+[16.142076] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/lib/vipnav/waypoint_publisher.py\n'}
+[16.142189] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/lib/vipnav/velocity_listener\n'}
+[16.142306] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/ament_index/resource_index/package_run_dependencies/vipnav\n'}
+[16.142466] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/ament_index/resource_index/parent_prefix_path/vipnav\n'}
+[16.142713] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/environment/ament_prefix_path.sh\n'}
+[16.142926] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/environment/ament_prefix_path.dsv\n'}
+[16.143216] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/environment/path.sh\n'}
+[16.143376] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/environment/path.dsv\n'}
+[16.143594] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/local_setup.bash\n'}
+[16.143754] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/local_setup.sh\n'}
+[16.144016] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/local_setup.zsh\n'}
+[16.144110] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/local_setup.dsv\n'}
+[16.144162] (vipnav) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/package.dsv\n'}
+[16.202836] (-) TimerEvent: {}
+[16.303186] (-) TimerEvent: {}
+[16.391476] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/ament_index/resource_index/packages/vipnav\n'}
+[16.391821] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/cmake/vipnavConfig.cmake\n'}
+[16.391916] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/cmake/vipnavConfig-version.cmake\n'}
+[16.392047] (vipnav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/NAV2/src/install/vipnav/share/vipnav/package.xml\n'}
+[16.395799] (vipnav) CommandEnded: {'returncode': 0}
+[16.403523] (-) TimerEvent: {}
+[16.416399] (vipnav) JobEnded: {'identifier': 'vipnav', 'rc': 0}
+[16.417718] (-) EventReactorShutdown: {}

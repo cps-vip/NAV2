@@ -1,0 +1,18 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o[0m
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:46:8:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Ktopic_callback[m[K’ declared void
+   46 |   void [01;31m[Ktopic_callback[m[K<geometry_msgs::msg::Twist>(geometry_msgs::msg::Twist msg) {
+      |        [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:46:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   46 |   void [01;31m[Ktopic_callback[m[K<geometry_msgs::msg::Twist>(geometry_msgs::msg::Twist msg) {
+      |        [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                      [32m[K;[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:46:22:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K<[m[K’ token
+   46 |   void topic_callback[01;31m[K<[m[Kgeometry_msgs::msg::Twist>(geometry_msgs::msg::Twist msg) {
+      |                      [01;31m[K^[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:[m[K In constructor ‘[01m[Kvelocity_listener::[01;32m[Kvelocity_listener[m[K()[m[K’:
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:39:45:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_callback[m[K’ is not a member of ‘[01m[Kvelocity_listener[m[K’
+   39 |         "/cmd_vel", 10, &velocity_listener::[01;31m[Ktopic_callback[m[K);
+      |                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/velocity_listener.dir/build.make:76: CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/velocity_listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

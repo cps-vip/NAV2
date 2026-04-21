@@ -5,8 +5,6 @@
 
 #include <fcntl.h>
 #include <termios.h>
-#include <unistd.h>
-#include <errno.h>
 
 #include "geometry_msgs/msg/twist.hpp"
 #include "rclcpp/rclcpp.hpp"
@@ -36,23 +34,7 @@ public:
     tcgetattr(serial_port, &tty);
     cfsetispeed(&tty, B115200);
 
-    tty.c_cflag &= ~PARENB;
-    tty.c_cflag &= ~CSTOPB;
-    tty.c_cflag &= ~CSIZE;
-    tty.c_cflag |= CS8;
-
-    tcsetattr(serial_port, TCSANOW, &tty);
-
-    subscription_ =
-      this->create_subscription<geometry_msgs::msg::Twist>(
-        "/cmd_vel", 10, &velocity_listener::topic_callback);
-  }
- 
-private: 
-  rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscription_;
-  int serial_port = -1;
-
-  void topic_callback(geometry_msgs::msg::Twist msg) {
+    auto topic_callback = [this](const geometry_msgs::msg::Twist msg) -> void {
 
         const double wheel_distance = 15.0;
         double linear_x = msg.linear.x;
@@ -66,9 +48,18 @@ private:
 
         RCLCPP_INFO(this->get_logger(), "Linear x: %.2f, angular z: %.2f", linear_x, angular_z);
 
-        write(serial_port, data1.c_str(), data1.size())
-        write(serial_port, data2.c_str(), data2.size())
+        write(serial_port, data1.c_str(), data1.size());
+        write(serial_port, data2.c_str(), data2.size());
+  };
+
+    subscription_ =
+      this->create_subscription<geometry_msgs::msg::Twist>(
+        "/cmd_vel", 10, topic_callback);
   }
+ 
+private: 
+  rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscription_;
+  int serial_port;
 };
 
 int main(int argc, char * argv[])

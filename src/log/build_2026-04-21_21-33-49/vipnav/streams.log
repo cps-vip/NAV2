@@ -1,0 +1,29 @@
+[0.084s] Invoking command in '/home/ubuntu/NAV2/src/build/vipnav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j20 -l20
+[1.403s] [ 50%] [32mBuilding CXX object CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o[0m
+[4.039s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:[m[K In lambda function:
+[4.039s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:51:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_port[m[K’ is not captured
+[4.039s]    51 |         write([01;31m[Kserial_port[m[K, data1.c_str(), data1.size());
+[4.039s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.049s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:37:32:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[4.049s]    37 |     auto topic_callback = [this[01;36m[K][m[K(const geometry_msgs::msg::Twist msg) -> void {
+[4.049s]       |                                [01;36m[K^[m[K
+[4.049s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:25:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint serial_port[m[K’ declared here
+[4.049s]    25 |     int [01;36m[Kserial_port[m[K = open("/dev/ttyAMA0", O_RDWR);
+[4.049s]       |         [01;36m[K^~~~~~~~~~~[m[K
+[4.050s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:52:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_port[m[K’ is not captured
+[4.050s]    52 |         write([01;31m[Kserial_port[m[K, data2.c_str(), data2.size());
+[4.050s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.050s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:37:32:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[4.050s]    37 |     auto topic_callback = [this[01;36m[K][m[K(const geometry_msgs::msg::Twist msg) -> void {
+[4.050s]       |                                [01;36m[K^[m[K
+[4.050s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:25:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint serial_port[m[K’ declared here
+[4.050s]    25 |     int [01;36m[Kserial_port[m[K = open("/dev/ttyAMA0", O_RDWR);
+[4.050s]       |         [01;36m[K^~~~~~~~~~~[m[K
+[4.050s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:[m[K In constructor ‘[01m[Kvelocity_listener::[01;32m[Kvelocity_listener[m[K()[m[K’:
+[4.050s] [01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:55:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Ksubscription_[m[K’
+[4.050s]    55 |     [01;31m[Ksubscription_[m[K =
+[4.050s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[4.845s] gmake[2]: *** [CMakeFiles/velocity_listener.dir/build.make:76: CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o] Error 1
+[4.845s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/velocity_listener.dir/all] Error 2
+[4.845s] gmake: *** [Makefile:146: all] Error 2
+[4.849s] Invoked command in '/home/ubuntu/NAV2/src/build/vipnav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/NAV2/src/build/vipnav -- -j20 -l20

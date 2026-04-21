@@ -1,0 +1,27 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o[0m
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:[m[K In lambda function:
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:51:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_port[m[K’ is not captured
+   51 |         write([01;31m[Kserial_port[m[K, data1.c_str(), data1.size());
+      |               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:37:32:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   37 |     auto topic_callback = [this[01;36m[K][m[K(const geometry_msgs::msg::Twist msg) -> void {
+      |                                [01;36m[K^[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:25:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint serial_port[m[K’ declared here
+   25 |     int [01;36m[Kserial_port[m[K = open("/dev/ttyAMA0", O_RDWR);
+      |         [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:52:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_port[m[K’ is not captured
+   52 |         write([01;31m[Kserial_port[m[K, data2.c_str(), data2.size());
+      |               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:37:32:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+   37 |     auto topic_callback = [this[01;36m[K][m[K(const geometry_msgs::msg::Twist msg) -> void {
+      |                                [01;36m[K^[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:25:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint serial_port[m[K’ declared here
+   25 |     int [01;36m[Kserial_port[m[K = open("/dev/ttyAMA0", O_RDWR);
+      |         [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:[m[K In constructor ‘[01m[Kvelocity_listener::[01;32m[Kvelocity_listener[m[K()[m[K’:
+[01m[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:55:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Ksubscription_[m[K’
+   55 |     [01;31m[Ksubscription_[m[K =
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/velocity_listener.dir/build.make:76: CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/velocity_listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

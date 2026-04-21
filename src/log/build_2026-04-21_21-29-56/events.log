@@ -1,0 +1,123 @@
+[0.000000] (-) TimerEvent: {}
+[0.000658] (vipnav) JobQueued: {'identifier': 'vipnav', 'dependencies': OrderedDict()}
+[0.000765] (vipnav) JobStarted: {'identifier': 'vipnav'}
+[0.068131] (vipnav) JobProgress: {'identifier': 'vipnav', 'progress': 'cmake'}
+[0.069960] (vipnav) JobProgress: {'identifier': 'vipnav', 'progress': 'build'}
+[0.070030] (vipnav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/NAV2/src/build/vipnav', '--', '-j20', '-l20'], 'cwd': '/home/ubuntu/NAV2/src/build/vipnav', 'env': OrderedDict({'VNCDESKTOP': '8efbbdd0fb5c:1 (ubuntu)', 'XDG_ACTIVATION_TOKEN': 'caja-297-8efbbdd0fb5c-terminator-0_TIME14599705', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'QT_SCALE_FACTOR': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'ubuntu', 'SUPERVISOR_GROUP_NAME': 'vnc', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': '8efbbdd0fb5c', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/software/HELICS/install/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/NAV2', 'GIO_LAUNCHED_DESKTOP_FILE': '/home/ubuntu/Desktop/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/tmp/dbus-Prh37MQOAJ,guid=a5c46ed9f720a85dde8e4a8569e7d89b', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '713', 'GNOME_KEYRING_CONTROL': '/home/ubuntu/.cache/keyring-HQPWN3', 'CPLUS_INCLUDE_PATH': ':/home/ubuntu/software/HELICS/include', 'COLCON_PREFIX_PATH': '/home/ubuntu/NAV2/src/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/home/ubuntu/software/GridLAB-D/bin:/home/ubuntu/software/HELICS/install/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/8efbbdd0fb5c:@/tmp/.ICE-unix/79,unix/8efbbdd0fb5c:/tmp/.ICE-unix/79', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'GLPATH': '/home/ubuntu/software/GridLAB-D/share', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SUPERVISOR_ENABLED': '1', 'SSH_AUTH_SOCK': '/home/ubuntu/.cache/keyring-HQPWN3/ssh', 'AMENT_PREFIX_PATH': '/home/ubuntu/NAV2/src/install/vipnav:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'CMAKE_ARGS': '-DCMAKE_CXX_STANDARD=20', 'TERMINATOR_UUID': 'urn:uuid:2aca8e71-6df5-4784-b9e6-d830fd33169a', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PASSWD': 'ubuntu', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'SUPERVISOR_PROCESS_NAME': 'vnc', 'PWD': '/home/ubuntu/NAV2/src/build/vipnav', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/ubuntu/NAV2/src/install/vipnav:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'QT_FONT_DPI': '96'}), 'shell': False}
+[0.097143] (-) TimerEvent: {}
+[0.197769] (-) TimerEvent: {}
+[0.298437] (-) TimerEvent: {}
+[0.399375] (-) TimerEvent: {}
+[0.500231] (-) TimerEvent: {}
+[0.600775] (-) TimerEvent: {}
+[0.701503] (-) TimerEvent: {}
+[0.802091] (-) TimerEvent: {}
+[0.902789] (-) TimerEvent: {}
+[1.003241] (-) TimerEvent: {}
+[1.103716] (-) TimerEvent: {}
+[1.204201] (-) TimerEvent: {}
+[1.304522] (-) TimerEvent: {}
+[1.357071] (vipnav) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o\x1b[0m\n'}
+[1.404765] (-) TimerEvent: {}
+[1.505265] (-) TimerEvent: {}
+[1.605816] (-) TimerEvent: {}
+[1.706323] (-) TimerEvent: {}
+[1.806823] (-) TimerEvent: {}
+[1.907224] (-) TimerEvent: {}
+[2.007624] (-) TimerEvent: {}
+[2.108081] (-) TimerEvent: {}
+[2.208799] (-) TimerEvent: {}
+[2.309330] (-) TimerEvent: {}
+[2.409873] (-) TimerEvent: {}
+[2.510367] (-) TimerEvent: {}
+[2.610769] (-) TimerEvent: {}
+[2.711240] (-) TimerEvent: {}
+[2.811897] (-) TimerEvent: {}
+[2.912555] (-) TimerEvent: {}
+[3.013269] (-) TimerEvent: {}
+[3.114320] (-) TimerEvent: {}
+[3.215014] (-) TimerEvent: {}
+[3.316112] (-) TimerEvent: {}
+[3.417313] (-) TimerEvent: {}
+[3.517952] (-) TimerEvent: {}
+[3.618734] (-) TimerEvent: {}
+[3.719334] (-) TimerEvent: {}
+[3.819849] (-) TimerEvent: {}
+[3.920298] (-) TimerEvent: {}
+[4.020707] (-) TimerEvent: {}
+[4.121073] (-) TimerEvent: {}
+[4.221443] (-) TimerEvent: {}
+[4.269702] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid velocity_listener::\x1b[01;32m\x1b[Ktopic_callback\x1b[m\x1b[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.269937] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:49:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Klinear\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.269996] (vipnav) StderrLine: {'line': b'   49 |         double linear_x = msg.\x1b[01;31m\x1b[Klinear\x1b[m\x1b[K.x;\n'}
+[4.270042] (vipnav) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.270082] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:50:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kangular\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.270127] (vipnav) StderrLine: {'line': b'   50 |         double angular_z = msg.\x1b[01;31m\x1b[Kangular\x1b[m\x1b[K.z;\n'}
+[4.270170] (vipnav) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.321689] (-) TimerEvent: {}
+[4.422162] (-) TimerEvent: {}
+[4.522612] (-) TimerEvent: {}
+[4.623057] (-) TimerEvent: {}
+[4.723592] (-) TimerEvent: {}
+[4.823978] (-) TimerEvent: {}
+[4.918803] (vipnav) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[4.919301] (vipnav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.919356] (vipnav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.919400] (vipnav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.919447] (vipnav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.919487] (vipnav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[4.919525] (vipnav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K,\n'}
+[4.919566] (vipnav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.919606] (vipnav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.919643] (vipnav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[4.919680] (vipnav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:10\x1b[m\x1b[K:\n'}
+[4.919719] (vipnav) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct rclcpp::function_traits::function_traits<void (velocity_listener::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >)>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.919763] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp:396:25:\x1b[m\x1b[K   recursively required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT> struct rclcpp::detail::SubscriptionCallbackTypeHelper<MessageT, CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value, void>::type> \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = void (velocity_listener::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >)]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.919841] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp:396:25:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kset\x1b[m\x1b[K(CallbackT) \x1b[35m\x1b[K[with CallbackT = void (velocity_listener::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >); MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.919882] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:93:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::SubscriptionFactory rclcpp::\x1b[01;32m\x1b[Kcreate_subscription_factory\x1b[m\x1b[K(CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<topic_statistics::SubscriptionTopicStatistics>) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = void (velocity_listener::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >); AllocatorT = std::allocator<void>; SubscriptionT = Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.919991] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:121:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(NodeParametersT&, NodeTopicsT&, const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = void (velocity_listener::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >); AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.920091] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:190:76:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(NodeT&, const std::string&, const QoS&, CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = void (velocity_listener::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >); AllocatorT = std::allocator<void>; SubscriptionT = Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; NodeT = Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.920195] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:99:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) \x1b[35m\x1b[K[with MessageT = geometry_msgs::msg::Twist_<std::allocator<void> >; CallbackT = void (velocity_listener::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >); AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.920292] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/NAV2/src/vipnav/node/velocity_listener.cpp:38:59:\x1b[m\x1b[K   required from here\n'}
+[4.920345] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:52:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koperator()\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kvoid (velocity_listener::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.920434] (vipnav) StderrLine: {'line': b'   52 |     typename function_traits<decltype( \x1b[01;31m\x1b[K&FunctionT::operator()\x1b[m\x1b[K)>::arguments>::type;\n'}
+[4.920504] (vipnav) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.920548] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:52:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koperator()\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kvoid (velocity_listener::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.920593] (vipnav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:52:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koperator()\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kvoid (velocity_listener::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.924109] (-) TimerEvent: {}
+[5.024454] (-) TimerEvent: {}
+[5.124933] (-) TimerEvent: {}
+[5.225382] (-) TimerEvent: {}
+[5.325978] (-) TimerEvent: {}
+[5.426671] (-) TimerEvent: {}
+[5.527239] (-) TimerEvent: {}
+[5.627853] (-) TimerEvent: {}
+[5.728890] (-) TimerEvent: {}
+[5.829573] (-) TimerEvent: {}
+[5.930335] (-) TimerEvent: {}
+[6.031287] (-) TimerEvent: {}
+[6.132459] (-) TimerEvent: {}
+[6.233576] (-) TimerEvent: {}
+[6.334681] (-) TimerEvent: {}
+[6.435513] (-) TimerEvent: {}
+[6.536321] (-) TimerEvent: {}
+[6.637171] (-) TimerEvent: {}
+[6.737989] (-) TimerEvent: {}
+[6.838561] (-) TimerEvent: {}
+[6.939100] (-) TimerEvent: {}
+[7.039706] (-) TimerEvent: {}
+[7.140196] (-) TimerEvent: {}
+[7.240587] (-) TimerEvent: {}
+[7.341107] (-) TimerEvent: {}
+[7.441552] (-) TimerEvent: {}
+[7.542057] (-) TimerEvent: {}
+[7.642534] (-) TimerEvent: {}
+[7.742961] (-) TimerEvent: {}
+[7.843454] (-) TimerEvent: {}
+[7.943936] (-) TimerEvent: {}
+[8.025706] (vipnav) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/velocity_listener.dir/build.make:76: CMakeFiles/velocity_listener.dir/node/velocity_listener.cpp.o] Error 1\n'}
+[8.026302] (vipnav) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/velocity_listener.dir/all] Error 2\n'}
+[8.026568] (vipnav) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.029749] (vipnav) CommandEnded: {'returncode': 2}
+[8.041643] (vipnav) JobEnded: {'identifier': 'vipnav', 'rc': 2}
+[8.043303] (-) EventReactorShutdown: {}
