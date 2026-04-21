@@ -71,7 +71,7 @@ def generate_launch_description():
             "slam_params_file": os.path.join(
                 get_package_share_directory(package_name),
                 "config",
-                "mapper_params_online_async_yaml",
+                "mapper_params_online_async.yaml",
             )
         }.items(),
     )

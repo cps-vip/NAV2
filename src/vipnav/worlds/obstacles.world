@@ -6,10 +6,8 @@
       <real_time_update_rate>1000</real_time_update_rate>
     </physics>
     <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
-    <plugin
-      filename="gz-sim-thermal-system"
-      name="gz::sim::systems::Thermal">
-      <ambient_temperature>298.15</ambient_temperature>
+    <plugin filename="gz-sim-thermal-system" name="gz::sim::systems::Thermal">
+      <temperature>150.0</temperature>
     </plugin>
     <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
     <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
