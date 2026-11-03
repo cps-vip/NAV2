@@ -27,9 +27,16 @@ class BridgeNode(Node):
         goal_msg.pose.pose.orientation.w = 1.0
 
         self.get_logger().info(f'Dispatching to: x={x}, y={y}')
+        future = self.nav_to_pose_client.send_goal_async(goal_msg)
+        future.add_done_callback(self.goal_response_callback)
 
-        self.nav_to_pose_client.wait_for_server()
-        self.nav_to_pose_client.send_goal_async(goal_msg)
+    def goal_response_callback(self, future):
+        goal_handle = future.result()
+
+        if goal_handle.accepted:
+            self.get_logger().info("Navigation goal ACCEPTED by Nav2")
+        else:
+            self.get_logger().warn("Navigation goal REJECTED by Nav2")
 
 
 def main(args=None):
@@ -47,13 +54,21 @@ def main(args=None):
     h.helicsFederateEnterExecutingMode(fed)
 
     current_time = 0.0
+    last_goal = None
     while h.helicsFederateGetState(fed) == h.HELICS_STATE_EXECUTION:
         if h.helicsInputIsUpdated(sub):
-            fault_name = h.helicsInputGetString(sub)
+            fault_name = h.helicsInputGetString(sub) 
             x, y = fault_name.split(',')
-            node.send_goal(x, y)
+
+            goal = (float(x), float(y))
+
+            if goal != last_goal:  
+                node.send_goal(x, y)
+                last_goal = goal
+            else:
+                node.get_logger().info("Duplicate fault location - skipping goal")
             
-        current_time = h.helicsFederateRequestTime(fed, current_time + 3)
+        current_time = h.helicsFederateRequestTime(fed, current_time + 300)
         rclpy.spin_once(node, timeout_sec=0.1)
     
     h.helicsFederateDisconnect(fed)
